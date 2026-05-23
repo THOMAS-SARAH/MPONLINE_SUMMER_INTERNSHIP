@@ -1,3 +1,5 @@
+//
+
 namespace proj1
 {
     internal class ConditionalExample
@@ -31,4 +33,15 @@ namespace proj1
 } 
 
 
+//code for program.cs file
+namespace proj1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ConditionalExample.sarah1();
+        }
+    }
+}
 
