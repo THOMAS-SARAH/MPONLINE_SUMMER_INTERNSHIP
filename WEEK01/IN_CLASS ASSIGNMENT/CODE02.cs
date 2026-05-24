@@ -30,6 +30,15 @@ namespace proj1
             }
         }    
 }
+
+ internal class Program
+ {
+     static void Main(string[] args)
+     {
+         ConditionalExample example = new ConditionalExample();
+         example.check();
+     }
+ } 
         
         
    
