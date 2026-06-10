@@ -79,4 +79,17 @@ SELECT * FROM employees WHERE name LIKE '%H'; -- ends with J
 --sorting
 SELECT * FROM employees ORDER BY salary DESC;
 
+--aggregate function
+
+--grouping function
+--Group by department
+SELECT department,COUNT(*) AS emp_count
+FROM employees
+GROUP BY department;
+
+SELECT department AVG(salary) AS emp_sal
+FROM employees
+GROUP BY department
+  HAVING AVG(salary)>500000;
+
 
