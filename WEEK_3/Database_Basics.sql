@@ -59,17 +59,23 @@ VALUES (''.'','','');
 
 --Select all Cllumns
 SELECT * FROM employees;
+
 --Select specific column
 SELECT name, email FROM employees;
+
 --Select with condition
 SELECT name FROM employees WHERE department ='HR' ;
+
 --comparison operators
 SELECT name FROM employees WHERE salary>50000;
+
 --logical operators
 SELECT name FROM employees WHERE department ='PR'and salary>10000;
+
 --pattern matching
 SELECT * FROM employees WHERE name LIKE 'J%'; -- starts with J
 SELECT * FROM employees WHERE name LIKE '%H'; -- ends with J
+
 --sorting
 SELECT * FROM employees ORDER BY salary DESC;
 
