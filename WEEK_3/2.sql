@@ -1,3 +1,8 @@
+--TASK
+--Create an account table
+--With account number,name and balance put a condition that balance can't be negative.
+--Insert some dummy data and then create a stored procedure to show the transaction between sender and receiver as a single unit
+
 -- Create Account Table
 CREATE TABLE Account (
     account_no INT PRIMARY KEY,
