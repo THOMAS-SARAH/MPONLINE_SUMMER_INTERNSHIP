@@ -1,3 +1,8 @@
+--QUESTION
+--Create account table to check the minimum balance should be >0.
+--Also create the customer table where the customer country is by default India
+--And create the ticket booking scenario for the scene where the scourland destination city can't be null
+
 -- ACCOUNT TABLE
 -- Balance must be greater than 0
 
