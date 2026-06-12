@@ -93,3 +93,11 @@ GROUP BY department
   HAVING AVG(salary)>500000;
 
 
+-- SUBQUERY
+
+--VIEW
+
+--TRANSACTION
+  
+
+
