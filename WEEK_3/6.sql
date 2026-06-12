@@ -1,1 +1,11 @@
-
+--CREATE TABLE Departments DepartmentID ,  DepartmentName ,  City
+ -- Employees table
+--CREATE TABLE Employees  EmployeeID   EmployeeName,    Salary ,    DepartmentID ,   
+--FOREIGN KEY (DepartmentID)        REFERENCES Departments(DepartmentID)
+--);
+--find employees whose salaries are above the company’s average salary. 
+--list the names of employees who work in departments located in Pune.
+--calculates the average salary of their department.
+--Computes the average salary per department. Returns only departments with an average salary above 50,000.
+--Returns the names of departments that have at least one employee. Departments with no employees will be excluded.
+--list the names of employees who belong to the HR department.
