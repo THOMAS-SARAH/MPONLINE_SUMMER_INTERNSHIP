@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarah's Photo Blog #Dream</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.photo{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+.photo:hover{
+    transform:translateY(-5px);
+}
+
+.photo img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:transform 0.4s;
+}
+
+.photo:hover img{
+    transform:scale(1.05);
+}
+
+.caption{
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    color:#444;
+}
+
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<h1>Sarah's Photo Blog #Dream</h1>
+
+<div class="gallery">
+
+    <div class="photo">
+        <a href="https://share.google/NXWu0s3SLO945N6Kh" target="_blank">
+            <img src="https://picsum.photos/id/1040/600/400" alt="Terrace Garden">
+            <div class="caption">Terrace Garden</div>
+        </a>
+    </div>
+
+    <div class="photo">
+        <a href="https://share.google/LM4cRBBPNeeJUHOU0" target="_blank">
+            <img src="https://picsum.photos/id/1016/600/400" alt="Mountains">
+            <div class="caption">Mountains</div>
+        </a>
+    </div>
+
+    <div class="photo">
+        <a href="https://share.google/Rrp8hQuLuAWDkapOr" target="_blank">
+            <img src="https://picsum.photos/id/1025/600/400" alt="Pet">
+            <div class="caption">Pet</div>
+        </a>
+    </div>
+
+    <div class="photo">
+        <a href="https://share.google/dnoeIUW4xS2G1S6DU" target="_blank">
+            <img src="https://picsum.photos/id/1035/600/400" alt="Sunrise">
+            <div class="caption">Sunrise</div>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
