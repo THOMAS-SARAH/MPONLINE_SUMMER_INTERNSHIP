@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photography Blog</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        /* Navbar */
+        nav{
+            background:#22365b;
+            padding:15px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+        }
+
+        nav ul li{
+            margin:0 20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#ffd700;
+        }
+
+        /* Gallery */
+        .gallery{
+            display:flex;
+            justify-content:space-around;
+            padding:15px;
+            flex-wrap:wrap;
+        }
+
+        .gallery img{
+            width:130px;
+            height:80px;
+            object-fit:cover;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Article Card */
+        .card{
+            width:500px;
+            margin:30px auto;
+            background:white;
+            padding:20px;
+            border-left:5px solid crimson;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2{
+            color:#2c3e50;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            color:#555;
+        }
+
+        @media(max-width:600px){
+            .card{
+                width:90%;
+            }
+
+            .gallery img{
+                width:100px;
+                height:70px;
+                margin:5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/200/120" alt="Beach">
+        <img src="https://picsum.photos/id/1016/200/120" alt="Mountains">
+        <img src="https://picsum.photos/id/1011/200/120" alt="City">
+        <img src="https://picsum.photos/id/1040/200/120" alt="Forest">
+        <img src="https://picsum.photos/id/1056/200/120" alt="Desert">
+    </div>
+
+    <div class="card">
+        <h2>Web Design Trends</h2>
+        <p>HTML5 and CSS3 are widely used to create responsive and modern websites. Flexbox and Grid layouts make page design easier and more attractive.</p>
+    </div>
+
+</body>
+</html>
