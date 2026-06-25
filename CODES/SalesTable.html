@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ececf1;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        th {
+            background-color: #59c14f;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #d3d3d3;
+            background-color: #f2f2f2;
+        }
+
+        tfoot td {
+            background-color: #d8efe0;
+            font-weight: bold;
+        }
+
+        .total-col {
+            background-color: #d8efe0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sales Data</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Salesman</th>
+                <th>Product A</th>
+                <th>Product B</th>
+                <th>Product C</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>120</td>
+                <td>150</td>
+                <td>100</td>
+                <td class="total-col">370</td>
+            </tr>
+            <tr>
+                <td>Radha</td>
+                <td>90</td>
+                <td>110</td>
+                <td>130</td>
+                <td class="total-col">330</td>
+            </tr>
+            <tr>
+                <td>Narayan</td>
+                <td>200</td>
+                <td>180</td>
+                <td>160</td>
+                <td class="total-col">540</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>410</td>
+                <td>440</td>
+                <td>390</td>
+                <td>1240</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
