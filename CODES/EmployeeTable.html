@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Table</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.table-container{
+    width:750px;
+    background:#fff;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#1f2937;
+    color:white;
+}
+
+th{
+    padding:14px 18px;
+    text-align:left;
+    font-size:15px;
+}
+
+td{
+    padding:14px 18px;
+    border-bottom:1px solid #ddd;
+    font-size:14px;
+}
+
+tbody tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+.badge{
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.active{
+    background:#28a745;
+}
+
+.pending{
+    background:#f0ad4e;
+}
+
+.inactive{
+    background:#dc3545;
+}
+</style>
+
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>EMP001</td>
+                <td>Raja Ravi</td>
+                <td>Engineering</td>
+                <td><span class="badge active">Active</span></td>
+            </tr>
+
+            <tr>
+                <td>EMP002</td>
+                <td>Ram Joshi</td>
+                <td>Marketing</td>
+                <td><span class="badge pending">Pending</span></td>
+            </tr>
+
+            <tr>
+                <td>EMP003</td>
+                <td>Narayan</td>
+                <td>Finance</td>
+                <td><span class="badge inactive">Inactive</span></td>
+            </tr>
+
+            <tr>
+                <td>EMP004</td>
+                <td>Pandurang</td>
+                <td>HR</td>
+                <td><span class="badge active">Active</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
