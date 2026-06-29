@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:800px;
+    background:#fff;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.form-row{
+    display:flex;
+    gap:20px;
+}
+
+.box{
+    flex:1;
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:15px;
+}
+
+.box h3{
+    color:#4CAF50;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:14px;
+}
+
+input, select{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+
+.btn{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    background:#4CAF50;
+    color:#fff;
+    border:none;
+    padding:10px 25px;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover{
+    background:#43a047;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <div class="form-row">
+
+            <!-- Personal Information -->
+            <div class="box">
+
+                <h3>Personal Information</h3>
+
+                <label>First Name</label>
+                <input type="text">
+
+                <label>Last Name</label>
+                <input type="text">
+
+                <label>Date of Birth</label>
+                <input type="date">
+
+                <label>Gender</label>
+                <select>
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Phone</label>
+                <input type="tel">
+
+            </div>
+
+            <!-- Professional Information -->
+            <div class="box">
+
+                <h3>Professional Information</h3>
+
+                <label>Company</label>
+                <input type="text">
+
+                <label>Designation</label>
+                <input type="text">
+
+                <label>Years of Experience</label>
+                <input type="number">
+
+                <label>Key Skills</label>
+                <input type="text">
+
+                <label>Work Email</label>
+                <input type="email">
+
+            </div>
+
+        </div>
+
+        <div class="btn">
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
