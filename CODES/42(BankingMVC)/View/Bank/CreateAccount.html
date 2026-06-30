@@ -1,0 +1,31 @@
+@model BankingMVC.Models.Account
+
+<h2>Create Account</h2>
+
+<form method="post">
+
+    Account Number
+
+    <input asp-for="AccountNumber" />
+
+    <br /><br />
+
+    Customer Name
+
+    <input asp-for="CustomerName" />
+
+    <br /><br />
+
+    Opening Balance
+
+    <input asp-for="Balance" />
+
+    <br /><br />
+
+    <input type="submit" value="Create Account" />
+
+</form>
+
+<h3>@ViewBag.Message</h3>
+
+<a asp-action="Index">Back</a>
