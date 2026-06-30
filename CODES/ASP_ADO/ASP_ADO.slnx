@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ASP_ADO.AppHost/ASP_ADO.AppHost.csproj" />
+  <Project Path="ASP_ADO.Server/ASP_ADO.Server.csproj" />
+</Solution>
