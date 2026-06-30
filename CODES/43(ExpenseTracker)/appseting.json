@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "ExpenseConnection": "Server=(localdb)\\MSSQLLocalDB;Database=ExpenseDB;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+}
