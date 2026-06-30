@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="44(ASP_STUDENT).AppHost/44(ASP_STUDENT).AppHost.csproj" />
+  <Project Path="44(ASP_STUDENT).Server/44(ASP_STUDENT).Server.csproj" />
+</Solution>
