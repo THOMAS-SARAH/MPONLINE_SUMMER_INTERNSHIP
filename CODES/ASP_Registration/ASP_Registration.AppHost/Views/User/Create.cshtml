@@ -1,0 +1,45 @@
+﻿@model ASP_Registration.Models.User
+
+@{
+    ViewData["Title"] = "Registration Form";
+}
+
+<h2>Registration Form</h2>
+<hr />
+
+<form asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Mobile" class="form-label"></label>
+        <input asp-for="Mobile" class="form-control" />
+        <span asp-validation-for="Mobile" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Save
+    </button>
+
+    <a asp-action="Index" class="btn btn-success">
+        View Users
+    </a>
+
+</form>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
