@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="ASP_Registration.AppHost/ASP_Registration.AppHost.csproj" />
-  <Project Path="ASP_Registration.Server/ASP_Registration.Server.csproj" />
-</Solution>
