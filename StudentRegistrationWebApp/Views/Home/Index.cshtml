@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center mt-5">
+
+    <h1 class="display-4">
+        Student Registration Web Application
+    </h1>
+
+    <p class="lead">
+        ASP.NET Core MVC | Entity Framework Core | Identity Authentication
+    </p>
+
+    <hr />
+
+    <a asp-controller="Courses"
+       asp-action="Index"
+       class="btn btn-primary m-2">
+        View Courses
+    </a>
+
+    <a asp-controller="StudentProfiles"
+       asp-action="Index"
+       class="btn btn-success m-2">
+        Student Profiles
+    </a>
+
+    <a asp-controller="CourseRegistrations"
+       asp-action="Index"
+       class="btn btn-warning m-2">
+        Course Registrations
+    </a>
+
+</div>

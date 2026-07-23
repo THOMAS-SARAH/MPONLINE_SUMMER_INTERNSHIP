@@ -1,0 +1,34 @@
+﻿@model IEnumerable<StudentRegistrationWebApp.Models.CourseRegistration>
+
+@{
+    ViewData["Title"] = "Course Registrations";
+}
+
+<h2>Course Registrations</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Register Student
+    </a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Registration Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>@item.StudentProfile?.FullName</td>
+            <td>@item.Course?.CourseName</td>
+            <td>@item.RegistrationDate.ToShortDateString()</td>
+        </tr>
+}
+    </tbody>
+</table>

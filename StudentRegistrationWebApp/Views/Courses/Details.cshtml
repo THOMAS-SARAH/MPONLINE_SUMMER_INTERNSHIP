@@ -1,0 +1,25 @@
+﻿@model StudentRegistrationWebApp.Models.Course
+
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<h2>Course Details</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Course Name</th>
+        <td>@Model.CourseName</td>
+    </tr>
+
+    <tr>
+        <th>Duration</th>
+        <td>@Model.Duration Days</td>
+    </tr>
+
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">
+    Back
+</a>

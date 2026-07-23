@@ -1,0 +1,43 @@
+﻿@model IEnumerable<StudentRegistrationWebApp.Models.Course>
+
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<h2>Course List</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Add New Course
+    </a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+@foreach (var item in Model)
+{
+        <tr>
+            <td>@item.CourseName</td>
+            <td>@item.Duration Days</td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+
+    </tbody>
+</table>
